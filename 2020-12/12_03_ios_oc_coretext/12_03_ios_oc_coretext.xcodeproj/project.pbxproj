@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F8F714D257A183C00957945 /* CYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F714C257A183C00957945 /* CYImageView.m */; };
+		4F8F7153257A298D00957945 /* CYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F7152257A298D00957945 /* CYLabel.m */; };
 		4FCF02012578FE3B0079BA9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF02002578FE3B0079BA9F /* AppDelegate.m */; };
 		4FCF02042578FE3B0079BA9F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF02032578FE3B0079BA9F /* SceneDelegate.m */; };
 		4FCF02072578FE3B0079BA9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF02062578FE3B0079BA9F /* ViewController.m */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F8F714B257A183C00957945 /* CYImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYImageView.h; sourceTree = "<group>"; };
+		4F8F714C257A183C00957945 /* CYImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYImageView.m; sourceTree = "<group>"; };
+		4F8F7151257A298D00957945 /* CYLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLabel.h; sourceTree = "<group>"; };
+		4F8F7152257A298D00957945 /* CYLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLabel.m; sourceTree = "<group>"; };
 		4FCF01FC2578FE3B0079BA9F /* 12_03_ios_oc_coretext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 12_03_ios_oc_coretext.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCF01FF2578FE3B0079BA9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FCF02002578FE3B0079BA9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +121,10 @@
 				4FCF020D2578FE3C0079BA9F /* LaunchScreen.storyboard */,
 				4FCF02102578FE3C0079BA9F /* Info.plist */,
 				4FCF02112578FE3C0079BA9F /* main.m */,
+				4F8F714B257A183C00957945 /* CYImageView.h */,
+				4F8F714C257A183C00957945 /* CYImageView.m */,
+				4F8F7151257A298D00957945 /* CYLabel.h */,
+				4F8F7152257A298D00957945 /* CYLabel.m */,
 			);
 			path = 12_03_ios_oc_coretext;
 			sourceTree = "<group>";
@@ -268,7 +278,9 @@
 			files = (
 				4FCF02072578FE3B0079BA9F /* ViewController.m in Sources */,
 				4FCF02012578FE3B0079BA9F /* AppDelegate.m in Sources */,
+				4F8F7153257A298D00957945 /* CYLabel.m in Sources */,
 				4FCF02122578FE3C0079BA9F /* main.m in Sources */,
+				4F8F714D257A183C00957945 /* CYImageView.m in Sources */,
 				4FCF02042578FE3B0079BA9F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

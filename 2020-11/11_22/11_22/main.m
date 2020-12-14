@@ -98,7 +98,7 @@ int main(int argc, const char * argv[]) {
 //        // insert code here...
 //        NSLog(@"Hello, World!");
 //    }
-//    NSObject *obj =  TestISA.alloc.init;
+    NSArray *obj =  [NSArray arrayWithObjects:@"123",@"1223", nil];
 //    __weak NSObject *obj2 = obj;
 //    NSMutableArray *array = @[].mutableCopy;
 //    int rc = 0;
@@ -170,11 +170,16 @@ int main(int argc, const char * argv[]) {
 //
 //    __weak NSObject* wb  = obj;
 //
-//    NSMutableArray *array = @[].mutableCopy;
+    NSMutableArray *array = @[].mutableCopy;
 ////    int rc = 0;
-//    for (int i = 0; i < 100; i ++) {
-//        [array addObject:obj];
-//    }
+    for (int i = 0; i < 100; i ++) {
+        [array addObject:obj];
+    }
+    
+    CFArrayRef arrayref = (__bridge_retained CFArrayRef)obj;
+    
+
+    CFRelease(arrayref);
 //
 //        for (int i = 0; i < 256; i ++) {
 //            [array addObject:obj];
@@ -183,18 +188,20 @@ int main(int argc, const char * argv[]) {
 //            NSLog(@"引用计数 = %i  sidetable = %i",count,rc);
 //        }
 //
-//    struct isa_bit *bit = (__bridge struct isa_bit *)obj;
-//
-//
-//    NSLog(@"nonpointer      = %i",(*bit).nonpointer);
-//    NSLog(@"has_assoc       = %i",(*bit).has_assoc);
-//    NSLog(@"has_cxx_dtor    = %i",(*bit).has_cxx_dtor);
-//    NSLog(@"shiftcls        = 0x%lx",(unsigned long)(*bit).shiftcls << 3);
-//    NSLog(@"magic           = 0x%x",(*bit).magic);
-//    NSLog(@"weakly_referenc = %i",(*bit).weakly_referenced);
-//    NSLog(@"deallocating    = %i",(*bit).deallocating);
-//    NSLog(@"has_sidetab_rc  = %i",(*bit).has_sidetable_rc);
-//    NSLog(@"extra_rc        = %x",(*bit).extra_rc);
+    struct isa_bit *bit = (__bridge struct isa_bit *)obj;
+    
+    
+
+
+    NSLog(@"nonpointer      = %i",(*bit).nonpointer);
+    NSLog(@"has_assoc       = %i",(*bit).has_assoc);
+    NSLog(@"has_cxx_dtor    = %i",(*bit).has_cxx_dtor);
+    NSLog(@"shiftcls        = 0x%lx",(unsigned long)(*bit).shiftcls << 3);
+    NSLog(@"magic           = 0x%x",(*bit).magic);
+    NSLog(@"weakly_referenc = %i",(*bit).weakly_referenced);
+    NSLog(@"deallocating    = %i",(*bit).deallocating);
+    NSLog(@"has_sidetab_rc  = %i",(*bit).has_sidetable_rc);
+    NSLog(@"extra_rc        = %x",(*bit).extra_rc);
 //    NSLog(@"class class     = %p",clas);
     
     return 0;

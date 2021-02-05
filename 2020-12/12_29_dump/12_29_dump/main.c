@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <mach-o/loader.h>
 
 int main(int argc, const char * argv[]) {
 //    @autoreleasepool {
@@ -26,6 +27,7 @@ struct ProgramVars {
   int*        NXArgcPtr;
   const char***    NXArgvPtr;
   const char***    environPtr;
+    
   const char**    __prognamePtr;
 };
 
@@ -35,7 +37,7 @@ void dumptofile(int argc, const char **argv, const char **envp, const char **app
 {
     printf("argc = %d \n",argc);
     
-    wait(<#int *#>)
+
     
     for (int i = 0; i < argc; i ++) {
         printf("%s\n",argv[0]);

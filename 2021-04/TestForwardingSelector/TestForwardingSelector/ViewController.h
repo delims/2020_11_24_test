@@ -9,6 +9,7 @@
 
 @interface ViewController : UIViewController
 
-
+- (void)aaa:(int)a;
++ (void)aaa:(int)a :(int)b;
 @end
 
